@@ -11,6 +11,10 @@ from ClipperWorking import *
 from chord_extractor.extractors import Chordino
 from NoteExtractor import *
 import streamlit as st
+import time 
+from tempo import *
+from os import path
+
 
 # class that uses the librosa library to analyze the key that an mp3 is in
 # arguments:
@@ -82,9 +86,11 @@ class Tonal_Fragment(object):
     
     # st.writeout of the key determined by the algorithm; if another key is close, that key is mentioned
     def print_key(self):
-        st.write("likely key: ", max(self.key_dict, key=self.key_dict.get), ", correlation: ", self.bestcorr, sep='')
-        if self.altkey is not None:
-                st.write("also possible: ", self.altkey, ", correlation: ", self.altbestcorr, sep='')
+         output = "likely key: " + str(max(self.key_dict, key=self.key_dict.get)) + ", correlation: " + str(self.bestcorr)
+         if self.altkey is not None:
+                output += "\nalso possible: " + str(self.altkey) + ", correlation: " + str(self.altbestcorr)
+         
+         return output
     
     # st.writes a chromagram of the file, showing the intensity of each pitch class over time
     def chromagram(self, title=None):
@@ -98,13 +104,67 @@ class Tonal_Fragment(object):
         plt.colorbar()
         plt.tight_layout()
         plt.show()
+        
+def BPMcomp(lis):
+  BPMlist = []
+  BPMsum = 0
+
+  for i in range(0, len(lis)):
+    BPMlist.append(lis[i].get("BPM"))
+    BPMsum += int(lis[i].get("BPM"))
+
+  BPMavg = BPMsum / len(lis)
+  st.write("The average BPM of all your pieces is: " + str(BPMavg))
+
+  largo = 0
+  adagio = 0
+  andante = 0
+  allegro = 0
+  presto = 0
+
+  for item in BPMlist:
+    if int(item) <= 60:
+        largo += 1
+    elif int(item) <= 76:
+        adagio += 1
+    elif int(item) <= 110:
+        andante += 1
+    elif int(item) <= 180:
+        allegro += 1
+    else:
+        presto += 1
+
+  BPMclassifications = [largo, adagio, andante, allegro, presto]
+  sorted_BPMclassifications = sorted(BPMclassifications, reverse=True)
+  
+  max_bpm_classification = max(sorted_BPMclassifications)
+  
+  if max_bpm_classification == largo:
+      st.write("The majority of your pieces are classified as 'Largo'. This means a majority of the pieces have a very slow and broad pace.")
+  elif max_bpm_classification == adagio:
+      st.write("The majority of your pieces are classified as 'Adagio'. This means a majority of the pieces have a leisurely relaxed pace.")
+  elif max_bpm_classification == andante:
+      st.write("The majority of your pieces are classified as 'Andante'. This means a majority of the pieces have a moderate pace.")
+  elif max_bpm_classification == allegro:
+      st.write("The majority of your pieces are classified as 'Allegro'. This means a majority of the pieces have a fast and energetic pace.")
+  else:
+      st.write("The majority of your pieces are classified as 'Presto'. This means a majority of the pieces have a rapid and urgent pace.")
+
+
+    
+  
+   
 
 if __name__ == "__main__":
+  
   n= int(st.number_input("Enter Number of Songs",1,10,1))
   lis= []
   for i in range(0,n):
     d1 = {}
-    x=st.text_input('Enter the Song URL', key=i)
+    try:
+      x=st.text_input('Enter the Song URL', key=i)
+    except RegexMatchError:
+      st.error("Enter a youtube link")
     audio_path = clip(YTDL(x))
     y, sr = librosa.load(audio_path)
     y_harmonic, y_percussive = librosa.effects.hpss(y)
@@ -113,13 +173,15 @@ if __name__ == "__main__":
     unebarque.chromagram("Une Barque sur l\'Ocean")
     unebarque_fsharp_min = Tonal_Fragment(y_harmonic, sr, tend=22)
     unebarque_fsharp_maj = Tonal_Fragment(y_harmonic, sr, tend=22)
-    unebarque_fsharp_maj.print_key()
+    song_key1=unebarque_fsharp_maj.print_key()
 
     unebarque_e_min = Tonal_Fragment(y_harmonic, sr, tstart=22, tend=33)
-    unebarque_e_min.print_key()
+    song_key2=unebarque_e_min.print_key()
+    
+    d1.update({'KEY': song_key1 + " "+song_key2})
   
   
-    st.write("CHORDS")
+
     chordino = Chordino(roll_on=1)  
     chord_list = []
 
@@ -130,8 +192,7 @@ if __name__ == "__main__":
       
     set_c= set(chord_list)
     clistfin = list(set_c)
-    for item in clistfin:
-      st.write(item)
+    
 
 
     d1.update({'CHORDS':chord_list})
@@ -141,13 +202,46 @@ if __name__ == "__main__":
       note_list.append(notesbuffer[i])
     set_res = set(note_list) 
     
-    st.write("NOTES")
+
     list_res = (list(set_res))
     d1.update({'NOTES':list_res})
-    for item in list_res: 
-      st.write(item) 
-    st.write("END FOR SONG")
+    
+    #st.write(*list_res, sep=" || ")
+    output_file = "result.wav"
+    sound = AudioSegment.from_mp3(audio_path)
+    sound.export(output_file, format="wav")
+    samps, fs = read_wav(output_file)
+    bpm_value = str(int(bpm_detector(samps, fs)))
+      
+    #st.write("BPM OF SONG: "+ bpm_value))
+    st.write("Song Processed")
+    d1.update({"BPM":bpm_value})
+    
     lis.append(d1)
-  st.write(lis)
+    st.write()
+    st.write()
+    
+    
+    if st.button("display" , key=i):
+      st.write("NOTES")
+      st.write(*list_res, sep=" || ")
+      st.write()
+      
+      st.write("CHORDS")
+      st.write(*clistfin , sep="")
+      st.write()
+      
+      st.write("key")
+      st.write(song_key1 + " "+song_key2)
+      
+      st.write("BPM is: "+bpm_value)
+      
+      time.sleep(15)
+  
+  if st.button("Click to Compare Tempo"):
+    BPMcomp(lis)
+
+    
+      
   
   
