@@ -1,4 +1,5 @@
-﻿chord_extractor==0.1.2
+pip==23.1.2
+chord_extractor==0.1.2
 ipython==8.14.0
 librosa==0.10.0.post2
 matplotlib==3.7.1
