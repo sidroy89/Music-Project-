@@ -11,3 +11,4 @@ scipy==1.10.1
 streamlit==1.23.1
 vamp==1.1.0
 wheel==0.40.0
+vamp-plugin-sdk==2.10.0-1
