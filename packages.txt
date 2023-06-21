@@ -1,3 +1,4 @@
 vamp-plugin-sdk 
 curl
 ffmpeg
+python3-dev
