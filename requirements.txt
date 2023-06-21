@@ -9,6 +9,6 @@ pytube==15.0.0
 PyWavelets==1.4.1
 scipy==1.10.1
 streamlit==1.23.1
+vamp-plugin-sdk==2.10.0
 vamp==1.1.0
 wheel==0.40.0
-vamp-plugin-sdk==2.10.0
