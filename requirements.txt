@@ -6,7 +6,7 @@ librosa==0.10.0.post2
 matplotlib==3.7.1
 pydub==0.25.1
 python_Levenshtein==0.21.1
-pytube==15.0.0
+pytube3
 PyWavelets==1.4.1
 scipy==1.10.1
 streamlit==1.23.1
