@@ -1,4 +1,5 @@
 numpy==1.24.3
+pytube--upgrade
 audioread==3.0.0
 pip==23.1.2
 ipython==8.14.0
