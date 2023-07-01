@@ -19,7 +19,7 @@ from analyser import*
 import joblib
 import base64
 
-st.header("Welcome to **Sound Sage**  :guitar")
+st.header("Welcome to Sound Sage V-1.0.0")
 
 
 
