@@ -35,16 +35,28 @@ st.markdown(
          unsafe_allow_html=True
      )
 
+st.markdown(f"""
+<p> Welcome to SOundSge. Your guide to composing your own music. 
+SoundSage will analyse the songs you give it and find out what makes those songs sound unique and help you compose similar-sounding music. 
+</p>
+
+<h3> How to Use SoundSage</h3>
+<ol>
+<li>First start off b uploading MP3 files of the songs you choose. A link is also provided to a website you can use to download mp3 files
+from youtube videos</li>
+<li>Click on the 'Start Processing' button and your songs will start to be analysed</li>
+<li>As your songs are analysed the information will keep being displayed</li>
+</ol>
+
+
+""")
 
 
 
 
 
-# class that uses the librosa library to analyze the key that an mp3 is in
-# arguments:
-#     waveform: an mp3 file loaded by librosa, ideally separated out from any percussive sources
-#     sr: sampling rate of the mp3, which can be obtained when the file is read with librosa
-#     tstart and tend: the range in seconds of the file to be analyzed; default to the beginning and end of file if not specified
+
+
 class Tonal_Fragment(object):
     def __init__(self, waveform, sr, tstart=None, tend=None):
         self.waveform = waveform
