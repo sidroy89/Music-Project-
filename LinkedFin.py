@@ -36,16 +36,26 @@ st.markdown(
      )
 
 st.markdown(f"""
-<p> Welcome to SOundSge. Your guide to composing your own music. 
+<p> Welcome to SoundSge. Your guide to composing your own music. 
 SoundSage will analyse the songs you give it and find out what makes those songs sound unique and help you compose similar-sounding music. 
 </p>
 
 <h3> How to Use SoundSage</h3>
 <ol>
-<li>First start off b uploading MP3 files of the songs you choose. A link is also provided to a website you can use to download mp3 files
+<li>First start off by uploading MP3 files of the songs you choose. A link is also provided to a website you can use to download mp3 files
 from youtube videos</li>
 <li>Click on the 'Start Processing' button and your songs will start to be analysed</li>
 <li>As your songs are analysed the information will keep being displayed</li>
+<li> <b> How to interpret your results to compose your own music</b>
+         <ol>
+         <li>If you want to compose similar-sounding music try using a tempo close to the average of your songs</li>
+         <li>Try using the musical keys with the highest correlation factor given</li>
+         <li>For your chord progression try using the common patterns of chords from within the songs. Also, try to use different types of chords
+         such as minor, major the, etc.</li>
+         <li>While writing your main melody try using the notes which are most commonly used in your songs, or try using the patterns found 
+         found most commonly in your song</li>
+         </ol>
+</li>
 </ol>
 
 
