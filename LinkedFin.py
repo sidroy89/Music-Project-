@@ -40,8 +40,8 @@ st.header("Welcome to Sound Sage V-1.0.0")
 
 st.markdown(f"""
 
-<div style = "color:#7894c2">
-<p> Welcome to SoundSge. Your guide to composing your own music. 
+<div>
+<p style= background-color:#7894c2> Welcome to SoundSge. Your guide to composing your own music. 
 SoundSage will analyse the songs you give it and find out what makes those songs sound unique and help you compose similar-sounding music. 
 </p>
 
