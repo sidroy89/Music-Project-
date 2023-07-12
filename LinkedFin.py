@@ -45,7 +45,7 @@ video_html = """
 
 		</style>	
 		<video autoplay muted loop id="myVideo">
-		  <source src="https://media.tenor.com/jIx6LIssomUAAAAC/vinyl-anime.gif")>
+		  <source src="https://static.streamlit.io/examples/star.mp4")>
 		  Your browser does not support HTML5 video.
 		</video>
         """
