@@ -51,7 +51,6 @@ video_html = """
         """
 
 st.markdown(video_html, unsafe_allow_html=True)
-st.title('Video page')
 
 
 st.header("Welcome to Sound Sage V-1.0.0")
