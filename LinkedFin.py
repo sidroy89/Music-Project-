@@ -39,7 +39,7 @@ st.header("Welcome to Sound Sage V-1.0.0")
 
 
 st.markdown(f"""
-<p> Welcome to SoundSge. Your guide to composing your own music. 
+<p style="color:blue"> Welcome to SoundSge. Your guide to composing your own music. 
 SoundSage will analyse the songs you give it and find out what makes those songs sound unique and help you compose similar-sounding music. 
 </p>
 
