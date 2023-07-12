@@ -11,9 +11,10 @@ div.intro
   border-color:black;
   border-radius:5px;
   background-color:#823082;
+  margin: 10px;
 }
 
-div.intro.p
+div.intro
 {
   padding:12px 21px 12px 21px;
   font: Times New Roman;
