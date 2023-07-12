@@ -19,7 +19,7 @@ from analyser import*
 import joblib
 import base64
 
-with open('style.css') as f:
+with open('styles.css') as f:
     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
 st.markdown(
