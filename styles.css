@@ -21,9 +21,13 @@ div.intro
 
 ol.instr
 {
+  justify-content: center;
+  color: white;
+  border-style:solid;
+  border-color:black;
   border-radius:5px;
   background-color:#823082;
-  margin: 100px;
+  margin: 10px;
 }
 
 div.intro
