@@ -45,7 +45,7 @@ video_html = """
 
 		</style>	
 		<video autoplay muted loop id="myVideo">
-		  <source src="https://static.streamlit.io/examples/star.mp4")>
+		  <source src="https://media.tenor.com/jIx6LIssomUAAAAC/vinyl-anime.gif")>
 		  Your browser does not support HTML5 video.
 		</video>
         """
@@ -55,18 +55,7 @@ st.title('Video page')
 
 
 st.header("Welcome to Sound Sage V-1.0.0")
-st.markdown(
-         f"""
-         <style>
-         .stApp {{
-             background-image: url("https://images.unsplash.com/photo-1603048588665-791ca8aea617?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHZpbnlsfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60");
-             background-attachment: fixed;
-             background-size: cover
-         }}
-         </style>
-         """,
-         unsafe_allow_html=True
-     )
+
 
 st.markdown(f"""
 <p> Welcome to SoundSge. Your guide to composing your own music. 
