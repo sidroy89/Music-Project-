@@ -2,3 +2,10 @@ div.css-1y3ikf4.eqr7zpz4
 {
   color:red
 }
+
+div.intro
+{
+  border-style:solid
+  border-color:black
+  border-radius:25px
+}
