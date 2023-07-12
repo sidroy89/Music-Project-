@@ -47,7 +47,7 @@ SoundSage will analyse the songs you give it and find out what makes those songs
 </div>
 
 <h3> How to Use SoundSage</h3>
-<ol>
+<ol class="instr">
 <li>First start off by uploading MP3 files of the songs you choose. A link is also provided to a website you can use to download mp3 files
 from youtube videos</li>
 <li>Click on the 'Start Processing' button and your songs will start to be analysed</li>
