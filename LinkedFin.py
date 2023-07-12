@@ -40,10 +40,11 @@ st.header("Welcome to Sound Sage V-1.0.0")
 
 
 st.markdown(f"""
-<div style="font-weight:100px color:#d45776 font:sans">
+<div>
 <p style= background-color:#7894c2 border-radius:25px border:black> Welcome to SoundSge. Your guide to composing your own music. 
 SoundSage will analyse the songs you give it and find out what makes those songs sound unique and help you compose similar-sounding music. 
 </p>
+</div>
 
 <h3> How to Use SoundSage</h3>
 <ol>
