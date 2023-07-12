@@ -12,3 +12,8 @@ div.intro
   border-radius:5px;
   background-color:#823082;
 }
+
+div.intro.p
+{
+  padding:12px;
+}
