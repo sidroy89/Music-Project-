@@ -19,6 +19,13 @@ div.intro
   margin: 10px;
 }
 
+ol.instr
+{
+  border-radius:5px;
+  background-color:#823082;
+  margin: 10px;
+}
+
 div.intro
 {
   padding:12px 21px 12px 21px;
