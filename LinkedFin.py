@@ -39,7 +39,9 @@ st.header("Welcome to Sound Sage V-1.0.0")
 
 
 st.markdown(f"""
-<p style="color:blue"> Welcome to SoundSge. Your guide to composing your own music. 
+
+<div style = "color:#7894c2">
+<p> Welcome to SoundSge. Your guide to composing your own music. 
 SoundSage will analyse the songs you give it and find out what makes those songs sound unique and help you compose similar-sounding music. 
 </p>
 
@@ -60,7 +62,7 @@ from youtube videos</li>
          </ol>
 </li>
 </ol>
-
+</div>
 
 """,unsafe_allow_html=True)
 
