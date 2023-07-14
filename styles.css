@@ -35,3 +35,8 @@ div.intro
   padding:12px 21px 12px 21px;
   font: Times New Roman;
 }
+
+div.intro: hover
+{
+  box-shadow: 5px 10px #F51AA4;
+}
