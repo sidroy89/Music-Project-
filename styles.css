@@ -90,5 +90,24 @@ div.intro:hover {
     text-shadow: 0 0 20px rgba(230, 48, 57), 0 0 30px rgba(230, 48, 57), 0 0 40px rgba(230, 48, 57);
   }
 }
+
+.analysis {
+  font-size: 20px;
+  padding-top: 30px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 0 0 10px rgba(0, 123, 255);
+  animation: blue-glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes blue-glow {
+  0% {
+    text-shadow: 0 0 10px rgba(0, 123, 255), 0 0 20px rgba(0, 123, 255), 0 0 30px rgba(0, 123, 255);
+  }
+  100% {
+    text-shadow: 0 0 20px rgba(0, 123, 255), 0 0 30px rgba(0, 123, 255), 0 0 40px rgba(0, 123, 255);
+  }
+}
+
                                
 
