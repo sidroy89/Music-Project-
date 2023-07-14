@@ -69,7 +69,6 @@ from youtube videos</li>
 
 """ , unsafe_allow_html=True)
 
-st.header("Lets Begin!")
 
 
 
