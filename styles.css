@@ -32,11 +32,7 @@ ol.instr
   margin: 10px;
 }
 
-div.intro
-{
-  padding:12px 21px 12px 21px;
-  font: Times New Roman;
-}
+
 
 div.intro {
   justify-content: center;
@@ -48,10 +44,20 @@ div.intro {
   margin: 10px;
   box-shadow: 0 0 3px rgba(255, 255, 255, 0.5);
   transition: box-shadow 0.3s ease-in-out;
+  padding:12px 21px 12px 21px;
+  font: Times New Roman;
 }
 
 div.intro:hover {
   box-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
 }
 
+
+#start 
+{
+  font-weight: bold;
+  color: white;
+  text-shadow: 0 0 5px rgba(173, 0, 255, 0.8);
+  animation: neon-glow 1.5s ease-in-out infinite alternate;
+}
 
