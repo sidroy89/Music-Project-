@@ -314,7 +314,7 @@ def analyze_chords(data):
 
 if __name__ == "__main__":
   
-  n= int(st.number_input("Enter Number of Songs",1,10,1))
+  n= int(st.number_input("Enter Number of Songs",1,10,1, class="input"))
   lis= []
   
   st.write("The hyperlink below links to a website where you can use youtube videos to download MP3 files from a youtbe video")
