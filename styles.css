@@ -53,13 +53,21 @@ div.intro:hover {
 }
 
 
-#start 
-{
-  font-size: 20px
+#start {
+  font-size: 70px;
   padding-top: 30px;
   font-weight: bold;
   color: white;
-  text-shadow: 0 0 5px rgba(230, 48, 57);
-  animation: neon-glow 1.5s ease-in-out infinite alternate;
+  text-shadow: 0 0 10px rgba(230, 48, 57);
+  animation: red-glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes red-glow {
+  0% {
+    text-shadow: 0 0 10px rgba(230, 48, 57), 0 0 20px rgba(230, 48, 57), 0 0 30px rgba(230, 48, 57);
+  }
+  100% {
+    text-shadow: 0 0 20px rgba(230, 48, 57), 0 0 30px rgba(230, 48, 57), 0 0 40px rgba(230, 48, 57);
+  }
 }
 
