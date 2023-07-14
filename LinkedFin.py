@@ -320,13 +320,11 @@ if __name__ == "__main__":
   n= int(st.number_input("",1,10,1))
   lis= []
   
-  st.write("The hyperlink below links to a website where you can use youtube videos to download MP3 files from a youtbe video")
-  link = '[MP3 Downloader](https://ytmp3.nu/5cAe2D/)'
 
   song_list=[]
 
   st.markdown(f"""
-  <div class="input">Submit Your songs MP3 </div>
+  <div class="input">Submit Your song MP3 </div>
   """ ,  unsafe_allow_html=True)
   for i in range(0,n):
       
@@ -397,7 +395,9 @@ if __name__ == "__main__":
   print(lis)
   time.sleep(15)
   
-  st.subheader("Analysis of BPM")
+   st.markdown(f"""
+  <div class="input">Analysis of BPM </div>
+  """ ,  unsafe_allow_html=True)
   analyse_BPM(lis)
   time.sleep(10)
   
@@ -410,14 +410,20 @@ if __name__ == "__main__":
   print("THE NEW CHORD LIST")
   print(tbr_chord_list)
  
-  st.subheader("Analysis of Chords")
+  st.markdown(f"""
+  <div class="input">Analysis of Chords </div>
+  """ ,  unsafe_allow_html=True)
   analyse_chords(lis)
   
-  st.subheader("Analysis of Musical Key")
+   st.markdown(f"""
+  <div class="input">Analysis of Musical Key</div>
+  """ ,  unsafe_allow_html=True)
   time.sleep(5)
   analyse_key(lis)
   
-  st.subheader("Analysis of Notes")
+   st.markdown(f"""
+  <div class="input">Analysis of Notes </div>
+  """ ,  unsafe_allow_html=True)
   time.sleep(5)
   analyse_notes(lis)
   
