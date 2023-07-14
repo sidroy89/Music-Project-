@@ -36,7 +36,8 @@ div.intro
   font: Times New Roman;
 }
 
-div.intro: hover
+div.intro:hover
 {
+  background-color: black;
   box-shadow: 5px 10px #F51AA4;
 }
