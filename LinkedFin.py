@@ -324,11 +324,13 @@ if __name__ == "__main__":
   link = '[MP3 Downloader](https://ytmp3.nu/5cAe2D/)'
 
   song_list=[]
-  for i in range(0,n):
-      st.markdown(f"""
+
+  st.markdown(f"""
   <div class="input">Submit Your songs MP3 </div>
   """ ,  unsafe_allow_html=True)
-  x=st.file_uploader("", key=i)
+  for i in range(0,n):
+      
+    x=st.file_uploader("", key=i)
     song_list.append(x)
   st.write("Song List")
   if st.button("Start processing"):
