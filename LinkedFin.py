@@ -328,7 +328,7 @@ if __name__ == "__main__":
       st.markdown(f"""
   <div class="input">Submit Your songs MP3 </div>
   """ ,  unsafe_allow_html=True)
-    x=st.file_uploader("", key=i)
+  x=st.file_uploader("", key=i)
     song_list.append(x)
   st.write("Song List")
   if st.button("Start processing"):
