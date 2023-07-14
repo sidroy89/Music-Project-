@@ -1,15 +1,16 @@
 span.css-10trblm.eqr7zpz0 {
   font-weight: bold;
   color: white;
+  text-shadow: 0 0 5px rgba(128, 50, 130, 0.2);
   animation: glow 2s infinite alternate;
 }
 
 @keyframes glow {
   0% {
-    box-shadow: 0 0 5px rgba(128, 50, 130, 0.2);
+    text-shadow: 0 0 5px rgba(128, 50, 130, 0.2);
   }
   100% {
-    box-shadow: 0 0 5px rgba(128, 50, 130, 0.4);
+    text-shadow: 0 0 5px rgba(128, 50, 130, 0.4);
   }
 }
 
