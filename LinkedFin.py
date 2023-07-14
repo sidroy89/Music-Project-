@@ -325,7 +325,10 @@ if __name__ == "__main__":
   st.markdown(link, unsafe_allow_html=True)
   song_list=[]
   for i in range(0,n):
-    x=st.file_uploader("enter the mp3 files of the songs", key=i)
+      st.markdown(f"""
+  <div class="input">Enter the Number of Songs </div>
+  """ ,  unsafe_allow_html=True)
+    x=st.file_uploader("", key=i)
     song_list.append(x)
   st.write("Song List")
   if st.button("Start processing"):
