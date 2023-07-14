@@ -26,7 +26,7 @@ st.markdown(
          f"""
          <style>
          .stApp {{
-             background-image: url("https://media.tenor.com/jIx6LIssomUAAAAC/vinyl-anime.gif");
+             background-image: url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAHkAtgMBIgACEQEDEQH/xAAWAAEBAQAAAAAAAAAAAAAAAAAAAQf/xAAYEAEBAQEBAAAAAAAAAAAAAAAAARFBMf/EABcBAQEBAQAAAAAAAAAAAAAAAAABAgX/xAAWEQEBAQAAAAAAAAAAAAAAAAAAARH/2gAMAwEAAhEDEQA/AMYVFdBgAagAKCgAAAAAFAAAAAQVEABAABFRSAAooCgAAC4CYCwCpiiiAIAAAAIAgAIABAipFaAAAxRQAApgAmLwAQxQEMDUAABFRAAAASAqCikBQwAF0BQAAAAhYAIFAAEEAQAAAEABRQFBZ4gC6IsUAAAAASgWgIAAJQEABBFQQUBqAqCigARdQAipFUNLENQAAAAQAABAAQQBBRFUAFBUAUBQAAAAEAAEAAABBFQQABaACKAoAAAGgAAAoAAAAAICKgACD//Z");
              background-attachment: fixed;
              background-size: cover
          }}
@@ -34,7 +34,7 @@ st.markdown(
          """,
          unsafe_allow_html=True
      )
-
+#https://media.tenor.com/jIx6LIssomUAAAAC/vinyl-anime.gif
 
 st.header("Welcome to Sound Sage V-1.0.0")
 
