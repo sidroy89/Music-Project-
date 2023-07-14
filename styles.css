@@ -8,16 +8,7 @@ div.css-1y3ikf4.eqr7zpz4
   
 }
 
-div.intro
-{
-  justify-content: center;
-  color: white;
-  border-style:solid;
-  border-color:black;
-  border-radius:5px;
-  background-color:#823082;
-  margin: 10px;
-}
+
 
 ol.instr
 {
@@ -44,11 +35,12 @@ div.intro {
   border-radius: 5px;
   background-color: #823082;
   margin: 10px;
-  box-shadow: 0 0 5px #fff;
+  box-shadow: 0 0 3px rgba(255, 255, 255, 0.5);
   transition: box-shadow 0.3s ease-in-out;
 }
 
 div.intro:hover {
-  box-shadow: 0 0 10px 5px #fff, 0 0 20px 10px #ff00ff;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
 }
+
 
