@@ -313,8 +313,12 @@ def analyze_chords(data):
 
 
 if __name__ == "__main__":
-  
-  n= int(st.number_input("Enter Number of Songs",1,10,1, class="input"))
+
+
+  st.markdown(f"""
+  <div class="input">Enter the Number of Songs </div>
+  """ ,  unsafe_allow_html=True)
+  n= int(st.number_input("",1,10,1)
   lis= []
   
   st.write("The hyperlink below links to a website where you can use youtube videos to download MP3 files from a youtbe video")
