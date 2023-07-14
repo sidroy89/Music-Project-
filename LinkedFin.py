@@ -322,11 +322,11 @@ if __name__ == "__main__":
   
   st.write("The hyperlink below links to a website where you can use youtube videos to download MP3 files from a youtbe video")
   link = '[MP3 Downloader](https://ytmp3.nu/5cAe2D/)'
-  st.markdown(link, unsafe_allow_html=True)
+
   song_list=[]
   for i in range(0,n):
       st.markdown(f"""
-  <div class="input">Enter the Number of Songs </div>
+  <div class="input">Submit Your songs MP3 </div>
   """ ,  unsafe_allow_html=True)
     x=st.file_uploader("", key=i)
     song_list.append(x)
