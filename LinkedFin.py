@@ -65,7 +65,7 @@ from youtube videos</li>
 </ol>
 </div>
 
-<div> Lets Begin!</div>
+<div id="start"> Lets Begin!</div>
 
 """ , unsafe_allow_html=True)
 
