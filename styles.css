@@ -36,8 +36,19 @@ div.intro
   font: Times New Roman;
 }
 
-div.intro:hover
-{
-  
-  box-shadow: 5px 10px #F51AA4;
+div.intro {
+  justify-content: center;
+  color: white;
+  border-style: solid;
+  border-color: black;
+  border-radius: 5px;
+  background-color: #823082;
+  margin: 10px;
+  box-shadow: 0 0 5px #fff;
+  transition: box-shadow 0.3s ease-in-out;
 }
+
+div.intro:hover {
+  box-shadow: 0 0 10px 5px #fff, 0 0 20px 10px #ff00ff;
+}
+
