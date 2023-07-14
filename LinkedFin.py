@@ -396,7 +396,7 @@ if __name__ == "__main__":
   time.sleep(15)
   
   st.markdown(f"""
-  <div class="input">Analysis of BPM </div>
+  <div class="analysis">Analysis of BPM </div>
   """ ,  unsafe_allow_html=True)
   analyse_BPM(lis)
   time.sleep(10)
@@ -411,18 +411,18 @@ if __name__ == "__main__":
   print(tbr_chord_list)
  
   st.markdown(f"""
-  <div class="input">Analysis of Chords </div>
+  <div class="analysis">Analysis of Chords </div>
   """ ,  unsafe_allow_html=True)
   analyse_chords(lis)
   
   st.markdown(f"""
-  <div class="input">Analysis of Musical Key</div>
+  <div class="analysis">Analysis of Musical Key</div>
   """ ,  unsafe_allow_html=True)
   time.sleep(5)
   analyse_key(lis)
   
   st.markdown(f"""
-  <div class="input">Analysis of Notes </div>
+  <div class="analysis">Analysis of Notes </div>
   """ ,  unsafe_allow_html=True)
   time.sleep(5)
   analyse_notes(lis)
