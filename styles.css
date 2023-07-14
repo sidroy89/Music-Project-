@@ -54,7 +54,7 @@ div.intro:hover {
 
 
 #start {
-  font-size: 70px;
+  font-size: 55px;
   padding-top: 30px;
   font-weight: bold;
   color: white;
@@ -70,4 +70,16 @@ div.intro:hover {
     text-shadow: 0 0 20px rgba(230, 48, 57), 0 0 30px rgba(230, 48, 57), 0 0 40px rgba(230, 48, 57);
   }
 }
+
+
+div.css-q8sbsg.eqr7zpz4
+{
+  font-size: 30px;
+  padding-top: 30px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 0 0 10px rgba(230, 48, 57);
+  animation: red-glow 1.5s ease-in-out infinite alternate;
+}
+                               
 
