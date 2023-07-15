@@ -132,5 +132,23 @@ div.intro:hover {
   background-color: rgba(255, 165, 0, 0.2);
 }
 
+div.css-nahz7x.eqr7zpz4 {
+  font-size: 20px;
+  padding-top: 30px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 0 0 10px rgba(0, 255, 0), 0 0 20px rgba(0, 255, 0), 0 0 30px rgba(0, 255, 0);
+  animation: green-glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes green-glow {
+  0% {
+    text-shadow: 0 0 10px rgba(0, 255, 0), 0 0 20px rgba(0, 255, 0), 0 0 30px rgba(0, 255, 0);
+  }
+  100% {
+    text-shadow: 0 0 20px rgba(0, 255, 0), 0 0 30px rgba(0, 255, 0), 0 0 40px rgba(0, 255, 0);
+  }
+}
+
                                
 
