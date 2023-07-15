@@ -426,6 +426,7 @@ if __name__ == "__main__":
   """ ,  unsafe_allow_html=True)
   time.sleep(5)
   analyse_notes(lis)
+  st.balloons()
   
   
       
