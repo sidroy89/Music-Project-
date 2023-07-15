@@ -393,7 +393,7 @@ if __name__ == "__main__":
     
       
   print(lis)
-  time.sleep(15)
+  time.sleep(60)
   
   st.markdown(f"""
   <div class="analysis">Analysis of BPM </div>
