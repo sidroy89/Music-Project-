@@ -1,4 +1,5 @@
 span.css-10trblm.eqr7zpz0 {
+  font-size: 70px;
   font-weight: bold;
   color: white;
   text-shadow: 0 0 5px rgba(173, 0, 255, 0.8);
@@ -148,6 +149,19 @@ div.css-nahz7x.eqr7zpz4 {
   100% {
     text-shadow: 0 0 20px rgba(0, 255, 0), 0 0 30px rgba(0, 255, 0), 0 0 40px rgba(0, 255, 0);
   }
+}
+
+
+button.css-negdup.e1ewe7hr10 {
+  font-weight: bold;
+  color: white;
+  text-shadow: 0 0 10px rgba(0, 0, 255), 0 0 20px rgba(0, 0, 255), 0 0 30px rgba(0, 0, 255);
+  box-shadow: 0 0 10px rgba(0, 0, 255), 0 0 20px rgba(0, 0, 255), 0 0 30px rgba(0, 0, 255);
+}
+
+button.css-negdup.e1ewe7hr10:hover {
+  text-shadow: 0 0 20px rgba(0, 0, 255), 0 0 30px rgba(0, 0, 255), 0 0 40px rgba(0, 0, 255);
+  box-shadow: 0 0 20px rgba(0, 0, 255), 0 0 30px rgba(0, 0, 255), 0 0 40px rgba(0, 0, 255);
 }
 
                                
