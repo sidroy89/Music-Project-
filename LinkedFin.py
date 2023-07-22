@@ -24,9 +24,10 @@ with open('styles.css') as f:
 
 page_bg_img = '''
 <style>
-body {
-background-image: url("https://images4.newscred.com/Zz1kNmFkYmFmNzhlNGIxMWViYTU1ZDFmYjg0ZWI5MTc4Zg==");
-background-size: cover;
+<style>
+.stApp {
+  background-image: url("data:image/png;base64,%s");
+  background-size: cover;
 }
 </style>
 '''
