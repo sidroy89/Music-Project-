@@ -48,7 +48,7 @@ SoundSage will analyse the songs you give it and find out what makes those songs
 <li>First start off by uploading MP3 files of the songs you choose. A link is also provided to a website you can use to download mp3 files
 from youtube videos</li>
 <li>Click on the 'Start Processing' button and your songs will start to be analysed</li>
-<li>As your songs are analysed the information will keep being displayed</li>
+<li>As your songs are analysed, information will keep being displayed</li>
 <li> <b> How to interpret your results to compose your own music</b>
          <ol>
          <li>If you want to compose similar-sounding music try using a tempo close to the average of your songs</li>
