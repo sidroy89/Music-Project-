@@ -400,11 +400,11 @@ if __name__ == "__main__":
   analyse_BPM(lis)
   time.sleep(10)
   
-  """ tbr_chord_list=[]
-  for item in lis:
-   chords= item['CHORDS']
-   for item in chords:
-     tbr_chord_list.append(chords)
+  #tbr_chord_list=[]
+  #for item in lis:
+   #chords= item['CHORDS']
+   #for item in chords:
+    # tbr_chord_list.append(chords)
   
   print("THE NEW CHORD LIST")
   print(tbr_chord_list) """
