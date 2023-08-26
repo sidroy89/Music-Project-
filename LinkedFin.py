@@ -8,7 +8,7 @@ import librosa.display
 from pydub import AudioSegment
 from YTExctract import *
 from ClipperWorking import *
-from chord_extractor.extractors import Chordino
+# from chord_extractor.extractors import Chordino
 from NoteExtractor import *
 import streamlit as st
 import time 
@@ -351,7 +351,7 @@ if __name__ == "__main__":
   
   
 
-      chordino = Chordino(roll_on=1)  
+      """ chordino = Chordino(roll_on=1)  
       chord_list = []
 
 
@@ -361,10 +361,11 @@ if __name__ == "__main__":
       
       set_c= set(chord_list)
       clistfin = list(set_c)
+      d1.update({'CHORDS':chord_list}) """
     
 
 
-      d1.update({'CHORDS':chord_list})
+      
       notesbuffer= list(NExt(audio_path))
       note_list=[]
       for i in range(0,len(NExt(audio_path))-9):
@@ -399,19 +400,19 @@ if __name__ == "__main__":
   analyse_BPM(lis)
   time.sleep(10)
   
-  tbr_chord_list=[]
+  """ tbr_chord_list=[]
   for item in lis:
    chords= item['CHORDS']
    for item in chords:
      tbr_chord_list.append(chords)
   
   print("THE NEW CHORD LIST")
-  print(tbr_chord_list)
+  print(tbr_chord_list) """
  
   st.markdown(f"""
   <div class="analysis">Analysis of Chords </div>
   """ ,  unsafe_allow_html=True)
-  analyse_chords(lis)
+  '''analyse_chords(lis)'''
   
   st.markdown(f"""
   <div class="analysis">Analysis of Musical Key</div>
