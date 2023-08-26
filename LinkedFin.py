@@ -406,8 +406,8 @@ if __name__ == "__main__":
    #for item in chords:
     # tbr_chord_list.append(chords)
   
-  print("THE NEW CHORD LIST")
-  print(tbr_chord_list) """
+  #print("THE NEW CHORD LIST")
+  #print(tbr_chord_list)
  
   st.markdown(f"""
   <div class="analysis">Analysis of Chords </div>
